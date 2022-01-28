@@ -7,10 +7,10 @@ function TodoItem(props){
 
             <p className={`max-w-cardSpace ${props.completed && 'line-through text-cyan-500'}`}>{props.text}</p>
 
-            <div className='w-14 h-full flex justify-between items-center'>
-                <span className={`w-5 h-5 bg-unchecked bg-cover ${props.completed && 'bg-check'}`} 
+            <div className='w-14 h-full lg:w-24 flex justify-between items-center'>
+                <span className={`w-5 h-5 lg:w-7 lg:h-7 bg-unchecked bg-cover ${props.completed && 'bg-check'}`} 
                 onClick={props.onComplete}></span>
-                <span className='w-5 h-5 bg-noTrash bg-cover hover:bg-trash'
+                <span className='w-5 h-5 lg:w-7 lg:h-7 bg-noTrash bg-cover hover:bg-trash'
                 onClick={props.onDelete}></span>
             </div>
             

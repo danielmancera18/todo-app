@@ -22,11 +22,11 @@ function AppUI(){
 
     return(
         <React.Fragment>
-            <header className='bg-gradient-to-b from-green-300 to-cyan-500 w-full h-56 text-center text-2xl font-semibold pt-12'>
-                <h2 className='text-white'>TO-DO App</h2>
+            <header className='bg-gradient-to-b from-green-300 to-cyan-500 w-full h-56 text-left text-2xl font-semibold pt-12 pl-12'>
+                <h2 className='text-white lg:text-4xl'>TO-DO App</h2>
             </header>
             
-            <section className='-mt-20 h-full pb-16 bg-white rounded-t-3xl flex flex-col items-center justify-start'>
+            <section className='-mt-20 h-full pb-16 bg-white rounded-t-3xl lg:rounded-none flex flex-col items-center justify-start'>
                 <TodoSearch />
                 <TodoCounter />
 
